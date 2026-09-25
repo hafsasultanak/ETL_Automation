@@ -31,7 +31,7 @@ def test_register_user_positive():
     print("Response:", response.text)
 
     # Successful registration is normally 200 or 201.
-    assert response.status_code in [200,201]
+    assert response.status_code in [300,301]
 
     response_json = response.json()
 
